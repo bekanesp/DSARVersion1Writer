@@ -1,0 +1,14 @@
+[
+    {
+        "campaign_id": "camp-xyz",
+        "recipient_email": "alice@example.com",
+        "status": "sent",
+        "opened_at": "2023-04-01T09:00:00Z"
+    },
+    {
+        "campaign_id": "camp-uvw",
+        "recipient_email": "bob@example.com",
+        "status": "clicked",
+        "opened_at": "2023-04-05T16:20:00Z"
+    }
+]

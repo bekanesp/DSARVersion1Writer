@@ -1,0 +1,34 @@
+version: '3.8'
+
+services:
+  request_intake:
+    build: ./request_intake_service
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./request_intake_service:/app
+
+  data_discovery:
+    build: ./data_discovery_agent
+    ports:
+      - "8001:8001"
+    volumes:
+      - ./data_discovery_agent:/app
+
+  secure_delivery:
+    build: ./secure_delivery_service
+    ports:
+      - "8002:8002"
+    volumes:
+      - ./secure_delivery_service:/app
+
+  workflow_orchestration:
+    build: ./workflow_orchestration_engine
+    ports:
+      - "8003:8003"
+    volumes:
+      - ./workflow_orchestration_engine:/app
+    depends_on:
+      - request_intake
+      - data_discovery
+      - secure_delivery

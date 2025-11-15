@@ -1,0 +1,16 @@
+[
+    {
+        "transaction_id": "txn-abc",
+        "user_email": "alice@example.com",
+        "amount": 99.99,
+        "currency": "USD",
+        "timestamp": "2023-03-10T11:00:00Z"
+    },
+    {
+        "transaction_id": "txn-def",
+        "user_email": "bob@example.com",
+        "amount": 49.5,
+        "currency": "USD",
+        "timestamp": "2023-03-12T18:45:00Z"
+    }
+]
